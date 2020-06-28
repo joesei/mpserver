@@ -2,7 +2,7 @@
  *
  * MIT License
  *
- * Copyright (c) 2020. Jose Manuel Hernandez
+ * Copyright (c) 2020 Jose Manuel Hernandez
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -26,4 +26,22 @@
 package com.sampletext.server;
 
 public class Server {
+
+    private int[] portNums;
+    private Protocol[] protocols;
+
+    /**
+     * TODO: Setup listener threads
+     * @param portNums
+     * @param protocols
+     */
+    public Server (int[] portNums, Protocol[] protocols) {
+        this.portNums = portNums;
+        this.protocols = protocols;
+    }
+
+    // Only for testing
+    public static void main (String[] args) {
+
+    }
 }
